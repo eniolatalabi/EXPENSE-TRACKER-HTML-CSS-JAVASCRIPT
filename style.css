@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100svh;
+    background-color: black;
+
+    
+}
+
+.every {
+    width: 90%;
+    font-size: 19px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.main {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.flexSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.every h3 {
+    color: white;
+    font-weight: 500;
+}
+
+.main input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid white;
+    border-radius: 0.3em;
+    color: #414167;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+}
+
+.totalAmount, .userAmount {
+    background: linear-gradient(to top right, #7f4bef, #aa48ef);
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+
+.outputContainer {
+    background: linear-gradient(to top right, #7f4bef, #aa48ef);
+    color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    font-weight: 500;
+    margin: 2em 0;
+    padding: 1.2em;
+}
+
+.outputContainer p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.outputContainer span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+
+.submit {
+    font-size: 0.9em;
+    margin-top: 0.9em;
+    background: #df5329;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.list {
+    background: linear-gradient(to top right, #7f4bef, #aa48ef);
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+    color: #fff;
+}
+
+.sublist-content{
+    width: 100%;
+    border-left: 0.3em solid white;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0;
+    align-items: center;
+}
+
+.product {
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: white;
+}
+
+.amount {
+    color: white;
+    margin-left: 20%;
+}
+
+.icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.7em;
+}
+
+.iconsContainer {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.productTitle {
+    margin-bottom: 1em;
+}
+
+.edit {
+    margin-left: auto;
+}
+
+.edit, .delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    .every {
+        font-size: 14px;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+    }
+}

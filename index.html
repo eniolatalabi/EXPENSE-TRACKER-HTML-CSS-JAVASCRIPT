@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="every">
+        <div class="main">
+            <div class="section">
+                <div class="totalAmount">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budgetError">Value cannot be empty or negative</p>
+                    <input type="number" name="budget" id="totalAmount" placeholder="Enter Amount"> 
+                    <button type="submit" class="submit" id="enterAmountButton">Set Budget</button>
+                </div>
+                <div class="userAmount">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="expenseTitleError">Values cannot be empty</p>
+                    <input type="text" name="expenseTitle" id="expenseTitle" placeholder="Enter Expenses">
+                    <!-- <p class="hide" id="expenseCostError"></p> -->
+                    <input type="number" name="userAmount" id="userAmount" placeholder="Enter Cost">
+                    <button type="submit" class="submit" id="checkAmount">Check Amount</button>
+                </div>
+            </div>
+            <div class="outputContainer flexSpace">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditureValue">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balanceAmount">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <h3>Expense List</h3>
+            <div class="listContainer" id="list"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
