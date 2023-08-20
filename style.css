@@ -142,7 +142,7 @@ body {
 }
 
 .error {
-    color: red;
+    color: rgb(230, 74, 74);
     font-size: 0.7em;
 }
 
